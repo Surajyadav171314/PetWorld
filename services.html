@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/services.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+<style>
+/* Header open */
+.head {
+    background-color: #151515;
+}
+
+.header {
+    background-color: #0576bc;
+    /* padding: 1px; */
+}
+
+.header p {
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.logo_com {
+    padding-top: 20px;
+    padding-left: 55px;
+}
+
+.logo {
+    float: left;
+    padding-top: 20px;
+    font-size: 25px;
+    padding-right: 10px;
+    color: #0576bc;
+}
+
+.locat p {
+    padding-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.locat span {
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.social_media i {
+    padding-top: 20px;
+    font-size: 30px;
+    background-color: #f4f1f1;
+    padding: 12px;
+    margin: 14px;
+    border-radius: 30px;
+    color: #0576bc;
+}
+
+.menu a {
+    color: #ffffff !important;
+    margin-left: 22px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.request {
+    padding-top: 10px;
+}
+
+.request a button {
+    background-color: #0576bc;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    font-weight: 500;
+    border-radius: 5px;
+    /* margin-left: 160px; */
+}
+
+.request i {
+    margin-left: 132px;
+    font-size: 30px;
+}
+
+.request button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-left: 14%;
+}
+
+.search input {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+.search button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search button:hover {
+    color: #00e6e6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        background-color: #000;
+        width: 100%;
+    }
+
+    .nav-list li {
+        text-align: center;
+    }
+
+    .search {
+        margin-top: 10px;
+    }
+}
+
+/* Header closed */
+
+/* banner open */
+.banner1 {
+    background-image: url(./images/contact_slide.jpg) !important;
+    padding: 100px;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.banner1::before {
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.about-text h1 {
+    /* text-align: center; */
+    color: #ffffff;
+    font-size: 5rem;
+}
+
+/* banner closed */
+
+/* About open  */
+.about-section {
+    padding: 50px 0;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-text {
+    max-width: 500px;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.btn-learn {
+    background-color: #5bc0de;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-learn:hover {
+    background-color: #31b0d5;
+}
+
+/* About closed */
+
+/* Service open */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pro_img {
+    padding: 50px 0;
+}
+
+.project_img {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project_img img {
+    width: 100%;
+    max-width: 270px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.project_img img:hover {
+    transform: scale(1.05);
+}
+
+.project_text {
+    display: block;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#loadMoreBtn {
+    background-color: #61bad6;
+    color: white;
+}
+
+#loadMoreBtn:hover {
+    background-color: #31b0d5;
+}
+
+#showLessBtn {
+    background-color: #d9534f;
+    color: white;
+}
+
+#showLessBtn:hover {
+    background-color: #c9302c;
+}
+/* Service closed */
+
+
+/* Appointment open */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section-appointment {
+    background-color: #61bad6;
+    padding: 45px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.puppy-image {
+    width: 100%;
+    max-width: 359px;
+    height: auto;
+}
+
+.content-box {
+    text-align: left;
+}
+
+.appointment-btn {
+    background-color: #b2e8f9;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.appointment-btn:hover {
+    background-color: #31b0d5;
+    color: white;
+}
+
+/* Appointment closed */
+
+/* footer open */
+.bg_footer {
+    background-color: #000;
+}
+
+.text-md-start {
+    padding-top: 2% !important;
+}
+
+/* footer closed */
+
+</style>
+
+</head>
+
+<body>
+    <!-- Header open -->
+    <div class="container-fluid head">
+        <div class="row">
+            <div class="navbhar col-xl-8 col-lg-8 col-md-4 col-sm-4">
+                <nav class="navbar navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="menu navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="features.html">FEATURE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="services.html">SERVICES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="activity.html">ACTIVITY TRACKER</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="consult.html">CONSULTATION</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact_us.html">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search...">
+                <button>&#128269;</button>
+            </div>
+        </div>
+    </div>
+    <!-- Header Closed -->
+
+    <!-- banner open -->
+    <section class="banner1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-sm-12 col-md-12">
+                    <div class="about-text">
+                        <h1>Services</h1>
+                    </div>
+                    <!-- <div class="about-text">
+                        <ul>
+                            <li>
+                                You are currently here!
+                                <i class="fa-solid fa-greater-than"></i>
+                                <a href="#"><span>Home</span></a>
+                                <i class="fa-solid fa-greater-than"></i>
+                                <a href=""><span>Contact</span></a>
+                            </li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner closed -->
+
+
+    <!-- About open -->
+    <div class="container about-section">
+        <div class="row about-content">
+            <div class="col-md-6">
+                <h2 class="fw-bold">A Few Words About Us</h2>
+                <p>
+                    We are passionate about pets and their well-being. Our team is dedicated to providing the best care
+                    and services for your furry friends. From training to grooming, we ensure your pets feel loved and
+                    cherished.
+                </p>
+                <p>
+                    Join us in creating a better world for pets. Whether you need expert advice, professional services,
+                    or simply a place to connect with fellow pet lovers, we are here for you!
+                </p>
+                <a href="#" class="btn-learn">Learn More</a>
+            </div>
+            <div class="col-md-6 about-image">
+                <img src="images/services-1-804x552.png" alt="Group of Dogs">
+            </div>
+        </div>
+    </div>
+    <!-- About closed -->
+
+    <!-- services open -->
+    <section class="our-sercive1 page-section-pt mt-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="section-title text-center">
+                <h2 class="title">Services</h2>
+                <p>We offer a variety of grooming services for dogs of all breeds and ages. We use only high-quality
+                  products that suit the needs of your pet. Discover our most popular services below.If you want service,
+                  click on the image to contact us.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="pro_img">
+          <div class="container">
+            <div class="row" id="image-container">
+              <div class="project_img col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                <a href="./Services.html"><img src="images/service-thumbnail-1-270x200.jpg" alt=""></a>
+                <a href="#" class="project_text">Styling</a>
+              </div>
+              <div class="project_img col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                <a href="./Services.html"><img src="images/service-thumbnail-2-270x200.jpg" alt=""></a>
+                <a href="#" class="project_text">Full Grooming</a>
+              </div>
+              <div class="project_img col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                <a href="./Services.html"><img src="images/service-thumbnail-3-270x200.jpg" alt=""></a>
+                <a href="#" class="project_text">Bath & Tidy Up</a>
+              </div>
+              <div class="project_img col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                <a href="./Services.html"><img src="images/service-thumbnail-4-270x200.jpg" alt=""></a>
+                <a href="#" class="project_text">Bath & Tidy Up</a>
+              </div>
+            </div>
+        </section>
+    
+      </section>
+    
+    <!-- Services closed -->
+
+
+<!-- Appointment open  -->
+    <section class="section-appointment mt-5">
+        <div class="container">
+            <div class="row align-items-center flex-column-reverse flex-lg-row">
+
+                <!-- Image Column -->
+                <div class="col-lg-6 text-center">
+                    <img src="images/home-3-359x546.png" alt="Puppy Image" class="puppy-image">
+                </div>
+
+                <!-- Text Content Column -->
+                <div class="col-sm-9 col-md-7 col-lg-6">
+                    <div class="content-box">
+                        <h4 class="text-white">Take the First Step to the</h4>
+                        <h2 class="text-white fw-bold">Success of Your Company</h2>
+                        <p class="text-white">
+                            We can make your company the leader of the market by providing
+                            high-quality business management solutions. Schedule an appointment to find out more.
+                        </p>
+                        <a href="./contact_us.html" class="btn btn-primary appointment-btn">Make an Appointment</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+<!-- Appointment closed -->
+
+
+
+<!-- NGO Service open -->
+<section class="ngo-helpline mt-5">
+    <div class="container text-center">
+        <h2>NGO Helpline Directory</h2>
+        <p>Find nearby animal welfare organizations and helplines for emergency assistance.</p>
+        
+        <!-- Search Bar -->
+        <input type="text" id="searchInput" onkeyup="searchNGO()" placeholder="Search by name or location..." class="form-control mt-3 mb-3">
+        
+        <!-- NGO Directory Table -->
+        <table class="table table-bordered table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th>NGO Name</th>
+                    <th>Location</th>
+                    <th>Helpline Number</th>
+                </tr>
+            </thead>
+            <tbody id="ngoList">
+                <tr>
+                    <td>Animal Rescue Foundation</td>
+                    <td>Mumbai</td>
+                    <td><a href="tel:+911234567890">+91 12345 67890</a></td>
+                </tr>
+                <tr>
+                    <td>Blue Cross Society</td>
+                    <td>Delhi</td>
+                    <td><a href="tel:+911112223344">+91 11122 23344</a></td>
+                </tr>
+                <tr>
+                    <td>Pet Care NGO</td>
+                    <td>Bangalore</td>
+                    <td><a href="tel:+919876543210">+91 98765 43210</a></td>
+                </tr>
+                <tr>
+                    <td>Animal Welfare Trust</td>
+                    <td>Kolkata</td>
+                    <td><a href="tel:+914567890123">+91 45678 90123</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Submit an NGO Form -->
+        <h3 class="mt-4">Submit an NGO</h3>
+        <form id="ngoForm">
+            <div class="form-group">
+                <input type="text" id="ngoName" class="form-control" placeholder="NGO Name" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="ngoLocation" class="form-control" placeholder="Location" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="ngoPhone" class="form-control" placeholder="Helpline Number" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add NGO</button>
+        </form>
+    </div>
+</section>
+
+<!-- JavaScript for Search & Form Submission -->
+<script>
+    function searchNGO() {
+        let input = document.getElementById("searchInput").value.toUpperCase();
+        let table = document.getElementById("ngoList");
+        let tr = table.getElementsByTagName("tr");
+
+        for (let i = 0; i < tr.length; i++) {
+            let tdName = tr[i].getElementsByTagName("td")[0];
+            let tdLocation = tr[i].getElementsByTagName("td")[1];
+
+            if (tdName || tdLocation) {
+                let textName = tdName.textContent || tdName.innerText;
+                let textLocation = tdLocation.textContent || tdLocation.innerText;
+
+                if (textName.toUpperCase().includes(input) || textLocation.toUpperCase().includes(input)) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+
+    // Add NGO Function
+    document.getElementById("ngoForm").addEventListener("submit", function(event) {
+        event.preventDefault(); 
+
+        let name = document.getElementById("ngoName").value;
+        let location = document.getElementById("ngoLocation").value;
+        let phone = document.getElementById("ngoPhone").value;
+
+        if (name && location && phone) {
+            let newRow = document.createElement("tr");
+            newRow.innerHTML = `<td>${name}</td><td>${location}</td><td><a href="tel:${phone}">${phone}</a></td>`;
+            document.getElementById("ngoList").appendChild(newRow);
+
+            // Reset Form
+            document.getElementById("ngoForm").reset();
+        }
+    });
+</script>
+<!-- NGO Service Closed -->
+
+
+
+    <!-- Footer open-->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="bg_footer">
+            <div class="container text-center text-md-start mt-5 bg_padding">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>Company name
+                        </h6>
+                        <p>
+                            Here you can use rows and columns to organize your footer content. Lorem ipsum
+                            dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Products
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Cat</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Dog</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Animal</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Pet</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Pricing</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Settings</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Orders</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Help</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            info@example.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="#">PetWorld.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer closed-->
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>
